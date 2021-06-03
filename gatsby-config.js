@@ -6,7 +6,13 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    title: `Ricardo Veronica personal web`,
+    siteTitle: `Ricardo Veronica`,
+    siteTitleAlt: `Ricardo Veronica personal blog`,
+    siteDescription: `Blog personal Ricardo Veronica`,
+    author: `linkedin.com/in/ricardoveronica`,
+    siteLanguage: `es`,
+    siteURL: `https://www.ricardoveronica.com`,
   },
   plugins: [
     {
@@ -19,18 +25,14 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `About`,
+            title: `AcercaDe`,
             slug: `/about`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `GitHub`,
+            url: `https://github.com/RicardoVeronica`,
           },
         ],
       },
@@ -67,8 +69,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-netlify`,
+    // `gatsby-plugin-gatsby-cloud`,
+    // `gatsby-plugin-netlify`,
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
