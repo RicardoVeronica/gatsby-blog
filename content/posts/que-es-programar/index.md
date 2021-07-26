@@ -12,7 +12,7 @@ tags:
 
 [La programación](https://es.wikipedia.org/wiki/Programaci%C3%B3n), se trata de meter datos en la computadora, y esperar la salida de estos cuando ya han sido trabajados dentro de la máquina.
 
-Por ejemplo, Microsoft Word, metes unos datos, (es decir las letras que escribes el teclado), después la computadora hace lo suyo y esperas que en tu monitor se vean reflejadas palabras. Bueno esa es la base de todo en la programación.
+Por ejemplo, Microsoft Word, metes unos datos, (es decir las letras que escribes en el teclado), después la computadora hace lo suyo y esperas que en tu monitor se vean reflejadas palabras. Bueno esa es la base de todo en la programación.
 
 **Entrada de datos -> La computadora hace su función -> Resultado**
 
