@@ -50,8 +50,8 @@ money = 100
 
 - Condicionales
 ```js
-x = 100
-y = 99
+let x = 100
+let y = 99
 
 // Con la condicion if preguntamos si 100 es menor que 99 y si es verdad
 // que se imprima en pantalla el string "Verdadero"
