@@ -34,6 +34,18 @@ module.exports = {
             name: `GitHub`,
             url: `https://github.com/RicardoVeronica`,
           },
+          {
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/ricardoveronica/`,
+          },
+          {
+            name: `YouTube`,
+            url: `https://www.youtube.com/channel/UCnd6oUDFx11ibETnPkjTVPw`,
+          },
+          {
+            name: `Portafolio`,
+            url: `https://portfolio-django.us.aldryn.io/`,
+          },
         ],
       },
     },

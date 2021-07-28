@@ -37,16 +37,16 @@ const Homepage = ({ posts }: PostsProps) => {
   return (
     <Layout>
       <h1 sx={visuallyHidden}>{siteTitle}</h1>
-      <section sx={{ mb: [5, 6, 7], p: { fontSize: [1, 2, 3], mt: 2 }, variant: `section_hero` }}>
+      <section sx={{ mb: [4, 5, 6], p: { fontSize: [1, 2, 3], mt: 2 }, variant: `section_hero` }}>
         <Hero />
       </section>
       <Title text="Ultimas entradas">
         <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Leer todas las entradas</Link>
       </Title>
       <Listing posts={posts} showTags={false} />
-      <List sx={{ variant: `section_bottom` }}>
-        <Bottom />
-      </List>
+      {/* <List sx={{ variant: `section_bottom` }}> */}
+      {/*   <Bottom /> */}
+      {/* </List> */}
     </Layout>
   )
 }
