@@ -40,9 +40,9 @@ Recuerda que ***ricar*** es mi nombre de usuario, por lo tanto el tuyo sera dife
 
 ## Que vamos a hacer
 
-Vamos a movernos en nuestro sistema operativo desde la terminal y hacer funciones básicas sin necesitar el Mouse, es decir vamos a emular lo que haríamos con la GUI como crear, copiar, eliminar archivos y carpetas, junto con otras curiosidades bastante interesantes que te serán de ayuda frente la terminal, te lo aseguro.
+Vamos a movernos en nuestro sistema operativo desde la terminal y hacer funciones básicas sin necesitar el Mouse, es decir vamos a emular lo que haríamos con la [GUI](https://www.ricardoveronica.com/al-principio-fue-la-linea-de-comandos) como crear, copiar, eliminar archivos y carpetas, junto con otras curiosidades bastante interesantes que te serán de ayuda frente la terminal, te lo aseguro.
 
-> Te recomiendo que si quieres ver la magia completa tengas a un lado abierto el explorador de archivos. Puedes utilizar el siguiente comando para hacerlo, nota que yo estoy posicionado en una carpeta llamada Test, no te preocupes por eso, más adelante te enseñare como crearla con comandos de la terminal
+> Te recomiendo que si quieres ver la magia completa, tengas a un lado abierto el explorador de archivos. Puedes utilizar el siguiente comando para hacerlo, nota que yo estoy posicionado en una carpeta llamada Test, no te preocupes por eso, más adelante te enseñare como crearla con comandos de la terminal
 
 ```
 start file:///
@@ -82,7 +82,7 @@ Cuando quieres ver las carpetas y los archivos que están en tu usuario solo abr
 
 Vamos, abre el explorador de archivos y ve a la carpeta principal de tu usuario, allí están las carpetas que crea por defecto tu sistema operativo, pero, ¿como podemos ver estas carpetas en la terminal?
 
-Escribe el siguiente comando y veras una lista con los archivos y carpetas que puedes ver en el explorador de archivos como una lista inicandote cuando fué creada cada cosa.
+Escribe el siguiente comando y veras una lista con los archivos y carpetas que también puedes ver en el explorador de archivos.
 
 Antes de esto, asegurate que estas en ***C:\Users\tu-nombre-de-usuario***
 
@@ -92,13 +92,13 @@ Antes de esto, asegurate que estas en ***C:\Users\tu-nombre-de-usuario***
 ls
 ```
 
-La columna ***Length*** te indica la cantidad de caracteres escritos en el archivo.
+Ademas de la hora y la fecha cuando fue creado cada archivo, esta la columna ***Length*** que te indica la cantidad de caracteres escritos en el archivo.
 
 Por ahora ignora la comlumna ***Mode*** esto tiene que ver con los permisos en los sistemas tipo Unix, que veremos en otro post.
 
 ![Comando para listar](./ls.png)
 
-Perfecto, ahora, si por alguna razón te olvidas en que carpeta estás posicionado y no vez que al lado izquierdo de la terminal esta la ruta absoluta de la carpeta en donde estas, puedes usar este comando
+Perfecto, ahora, si por alguna razón te olvidas en que carpeta estás posicionado y no ves que al lado izquierdo de la terminal esta la ruta absoluta de la carpeta en donde estas, puedes usar este comando
 
 - pwd de **Print Working Directory** Imprime directorio de trabajo
 
@@ -134,7 +134,7 @@ Estamos emulando el dar clic a la flecha de retroceso del explorador de archivos
 
 Excelente, ya somos libres para movernos por los directorios de nuestro sistema y poder ver que hay en cada uno de ellos, es tiempo de crear nuestros propios directorios y archivos.
 
-Veamos el primer comando que es para crear un directorio en donde estamos posicionados, llamémoslo Test
+Veamos el primer comando, es para crear un directorio en donde estamos posicionados, llamémoslo Test
 
 - mkdir de **make directory** hacer o crear directorio
 
@@ -162,7 +162,7 @@ Sé que están de moda editores como [VS Code](https://code.visualstudio.com/), 
 
 Por lo tanto permíteme presentarte una de las técnicas para escribir texto dentro de un archivo, usada hace eones cuando la humanidad aún estaba en pañales, y la carne de brontosaurio era el platillo predilecto, te presento el comando...
 
-- echo - pronunciado como eco
+- echo - pronunciado como **eco**
 
 Con él puedes hacer varias cosas, como por ejemplo escribir en el standard output de la terminal o más importante aun, escribir en la terminal y pasar lo que escribes a un archivo sin necesidad de ningún IDE o editor de texto, anda prueba estos comandos
 
@@ -180,7 +180,7 @@ echo "<h1>Hello world</h1>" > index.html
 
 Como ves el primero solo imprime lo que escribes entre comillas "dobles" o 'sencillas' en la misma terminal, intenta escribir varias palabras sin comillas para que veas el resultado.
 
-El segundo comando te permite pasar lo que escribiste por medio de un mayor que o un pipe (veremos esto en otro post) a un archivo que exista dentro del directorio en el que estás posicionado.
+El segundo comando te permite pasar lo que escribiste por medio de un mayor que (veremos que es esto en otro post) a un archivo que exista dentro del directorio en el que estás posicionado.
 
 Lo que sigue de seguro te va a encantar, pues no necesitas ningún software extra para leer lo que acabamos de escribir en nuestro archivo HTML.
 
@@ -202,11 +202,11 @@ cat index.html
 
 ![Comando cat para leer archivos en terminal](./cat-indexhtml.png)
 
-Bien, intenta escribir algo más dentro del archivo HTML de misma manera, con el signo mayor que o pipe que utilizamos para escribir el h1 y al intentar leerlo notaras algo extraño...
+Bien, intenta escribir algo más dentro del archivo HTML de misma manera, con el signo mayor que, que utilizamos para escribir el h1 y al intentar leerlo notaras algo extraño...
 
 Lo que escribiste antes se reemplaza por lo nuevo que escribas, si lo intentas varias veces verás que siempre es así, lo anterior se borra y solo se escribe lo nuevo, esto no está bien, ¿qué tal si quiero escribir otra línea justo debajo de lo que ya tengo escrito en el archivo?
 
-Bueno pues no te preocupes porque existe una solución a ese problema... el doble pipe
+Bueno pues no te preocupes porque existe una solución a ese problema... el doble mayor que
 
 ```
 echo [nueva-linea-a-escribir] >> index.html
@@ -214,7 +214,7 @@ echo [nueva-linea-a-escribir] >> index.html
 
 ![Comando echo para agregar etiquete p en html](./echo-p.png)
 
-Cada vez que uses el doble pipe se agregara lo que escribas como una nueva línea en tu archivo, genial ¿no?
+Cada vez que uses el doble mayor que, se agregara lo que escribas como una nueva línea en tu archivo, genial ¿no?
 
 ![Comando cat para leer archivos completo](./cat-index-complete.png)
 
@@ -250,7 +250,7 @@ Primero necesitamos crear un nuevo directorio, que es donde vamos a copiar nuest
 mkdir other
 ```
 
-![Comando man](./mkdir-other.png)
+![Comando mkdir para crear directorios](./mkdir-other.png)
 
 Listamos lo que tenemos en Test para asegurarnos que el directorio other se haya creado correctamente
 
@@ -258,7 +258,7 @@ Listamos lo que tenemos en Test para asegurarnos que el directorio other se haya
 ls
 ```
 
-![Comando man](./ls-other.png)
+![Comando para asegurarnos que se creo el nuevo directorio](./ls-other.png)
 
 Una vez que tenemos tanto el directorio nuevo como el archivo HTML, vamos a copiar el archivo al directorio con un solo comando, te puedes ir olvidando de los clics y del Mouse en este momento :p
 
@@ -266,7 +266,7 @@ Una vez que tenemos tanto el directorio nuevo como el archivo HTML, vamos a copi
 cp index.html other
 ```
 
-![Comando man](./cp.png)
+![Comando cp para copiar](./cp.png)
 
 Con el anterior comando le ordenamos al sistema copiar index.html a nuestro nuevo directorio other. Si no crees que tanta magia sea posible lista directamente el directorio other para asegurar que el archivo HTML está en ese directorio
 
@@ -274,13 +274,13 @@ Con el anterior comando le ordenamos al sistema copiar index.html a nuestro nuev
 ls other
 ```
 
-![Comando man](./ls-other-complete.png)
+![Comando para listar un directorio directamente](./ls-other-complete.png)
 
 En caso que no lo hayas notado este comando saca una copia del archivo original, por lo cual tenemos el HTML en Test y en other, que te parece si eliminamos el original, el que está en el directorio Test, esto lo puedes hacer con el siguiente comando
 
-- rm de **Remove** de quitar/eliminar/remover en español
+- rm de **Remove** quitar, eliminar o remover en español
 
-![Comando man](./rm.png)
+![Comando rm](./rm.png)
 
 Perfecto, ¿te das cuenta de que no usamos para nada la tecla ***Supr*** o clic derecho sobre el archivo y eliminar?, estos detalles te hacen ahorrar mucho tiempo mientras trabajas en tu sistema operativo, además de que te hacen ver como todo un [Hacker](https://www.ricardoveronica.com/como-convertirse-en-hacker)
 
@@ -300,7 +300,7 @@ Este comando tiene 2 utilidades muy usadas, una es cambiar el nombre del archivo
 mv index.html app.html
 ```
 
-![Comando man](./mv-name.png)
+![Comando mv para renombrar archivos o directorios](./mv-name.png)
 
 Ahora usa el comando **ls** para ver que nuestro HTML ahora se llama app.html, no sé tú, pero en lo personal me encanta usar la terminal, todo es tan rápido y fluido <3
 
@@ -308,7 +308,7 @@ Ahora usa el comando **ls** para ver que nuestro HTML ahora se llama app.html, n
 ls
 ```
 
-![Comando man](./mv-ls.png)
+![ls para listar el contenido](./mv-ls.png)
 
 La segunda utilidad es precisamente mover un archivo a otro directorio, vamos a mover app.html al directorio anterior, es decir a Test
 
@@ -316,7 +316,7 @@ La segunda utilidad es precisamente mover un archivo a otro directorio, vamos a 
 mv app.html ..
 ```
 
-![Comando man](./mv-file.png)
+![Comando mv para mover archivos](./mv-file.png)
 
 Listo, puedes usar **ls** para ver que el HTML ya no esta. Una vez hecho esto cambiemos nuestra posicion a Test
 
@@ -324,11 +324,11 @@ Listo, puedes usar **ls** para ver que el HTML ya no esta. Una vez hecho esto ca
 cd ..
 ```
 
-![Comando man](./cd-back.png)
+![Comando cd para ir al directorio anterior](./cd-back.png)
 
 Usa **ls** de nuevo ahora en Test para ver que se ha copiado correctamente
 
-![Comando man](./mv-ls-back.png)
+![Listar lo que hay en Test](./mv-ls-back.png)
 
 Bien, ahora tenemos nuestro directorio other completamente vacío, por lo cual podemos eliminarlo con el siguiente comando. Si, también podemos eliminar directorios con el poder de un solo comando
 
@@ -338,17 +338,17 @@ Bien, ahora tenemos nuestro directorio other completamente vacío, por lo cual p
 rmdir other
 ```
 
-![Comando man](./rmdir.png)
+![Comando rm](./rmdir.png)
 
 Ahora si lo que quieres es eliminar un directorio que tenga otros directorios o archivos dentro, también lo puedes hacer con el comando **rmdir** por ejemplo, ve al directorio anterior de Test (tú ya sabes hacer esto) e intenta borrar el mismo Test que tiene nuestro HTML adentro, te encontraras algo como esto
 
-![Comando man](./rmdir-files.png)
+![Comando rm en directorio con contenido](./rmdir-files.png)
 
 En resumen, este mensaje nos dice que ese directorio no está vacío pues tiene nuestro app.html dentro, si estamos seguros de borrarlo solo damos **Enter**.
 
 Para evitar este mensaje, siempre que estemos seguros de borrar un directorio, usa el siguiente comando
 
-![Comando man](./rm-rf.png)
+![Comando rm para evitar mensajes y borrar directamente](./rm-rf.png)
 
 Ahora estás preparado para dejar tu **Mouse** de lado y decirle a todos que eres ***el amo de Windows*** y nada ni nadie te detendrá para **conquistar el mundo**, o cualquiera que sea tu plan maligno para el futuro de la humanidad.
 
