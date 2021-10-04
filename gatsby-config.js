@@ -34,20 +34,28 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `GitHub`,
-            url: `https://github.com/RicardoVeronica`,
-          },
-          {
-            name: `LinkedIn`,
-            url: `https://www.linkedin.com/in/ricardoveronica/`,
-          },
-          {
             name: `YouTube`,
             url: `https://www.youtube.com/channel/UCnd6oUDFx11ibETnPkjTVPw`,
           },
           {
+            name: `Facebook`,
+            url: `https://www.facebook.com/Alt-Dev-104264135247324`,
+          },
+          {
+            name: `Twitter`,
+            url: `https://twitter.com/alt_dev_`,
+          },
+          {
+            name: `Medium`,
+            url: `https://medium.com/@AltDev`,
+          },
+          {
             name: `Portafolio`,
             url: `https://portfolio-django.us.aldryn.io/`,
+          },
+          {
+            name: `GitHub`,
+            url: `https://github.com/RicardoVeronica`,
           },
         ],
       },
