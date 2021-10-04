@@ -8,6 +8,7 @@ tags:
   - Sistemas operativos
   - Herramientas
   - Hackers
+  - Windows
 ---
 
 # La mejor terminal de Windows
