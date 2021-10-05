@@ -28,15 +28,11 @@ module.exports = {
             slug: `/blog`,
           },
           {
-            title: `AcercaDe`,
-            slug: `/about`,
+            title: `Tutoriales`,
+            slug: `/tutoriales`,
           },
         ],
         externalLinks: [
-          {
-            name: `YouTube`,
-            url: `https://www.youtube.com/channel/UCnd6oUDFx11ibETnPkjTVPw`,
-          },
           {
             name: `Facebook`,
             url: `https://www.facebook.com/Alt-Dev-104264135247324`,
@@ -52,10 +48,6 @@ module.exports = {
           {
             name: `Portafolio`,
             url: `https://portfolio-django.us.aldryn.io/`,
-          },
-          {
-            name: `GitHub`,
-            url: `https://github.com/RicardoVeronica`,
           },
         ],
       },
