@@ -53,8 +53,6 @@ Get-ExecutionPolicy
 
 También nos dice que si la respuesta a este comando es "Restricted" tenemos que copiar y pegar uno de los siguientes comandos
 
-Recomendación oficial
-
 ```
 Set-ExecutionPolicy Bypass -Scope Process
 ```
@@ -101,7 +99,7 @@ Alias para ***search***
 choco find [nombre-de-paquete]
 ```
 
-- Instalar un paquete (Ovidate de las ventanitas de siguiente, siguiente...)
+- Instalar un paquete (Olvidate de las ventanitas de siguiente, siguiente...)
 
 ```
 choco install [nombre-de-paquete] -y
@@ -115,17 +113,17 @@ La -y es para decirle a choco "Si" a todo lo que pregunte, por ejemplo, (Estas s
 choco uninstall [nombre-de-paquete]
 ```
 
-- ¿Quieres saber cuantos y cuales paquetes tienes instalados?
+- ¿Quieres saber cuantos y cuáles paquetes tienes instalados?
 
 ```
 choco list --local-only
 ```
 
-***Es muy importante el --local-only de lo contrario en la pantalla de tu terminal terminal vas a terner todos los paquetes del repositorio de Chocolatey***
+***Es muy importante el --local-only de lo contrario en la pantalla de tu terminal vas a tener todos los paquetes del repositorio de Chocolatey***
 
 Si quieres hacer eso mejor entra [aquí](https://community.chocolatey.org/packages)
 
-- Para solicitar información de algun paquete que instalaste usa este comando
+- Para solicitar información de algún paquete que instalaste usa este comando
 
 ```
 choco info [nombre-de-paquete]
@@ -135,7 +133,7 @@ Si quieres leer la documentación de Choco da clic [aquí](https://docs.chocolat
 
 ## Descarga tu primer paquete con Choco
 
-Como plus porque me caíste extremadamente bien (Seguir leyéndo a alguien que esta iniciando  no debe de ser nada fácil) te voy a dejar un mini tutorial de como usar los comandos anteriores instalando un paquete desde choco, vamos a instalar Node.js, ya que esto es un blog para principiantes en el mundo de la programación "Aunque... ahora que lo pienso no lo he especificado" bueno detalles más, detalles menos, y si no estas interesad@ en programar NTP sigue mi blog y próximamente mi canal de [YouTube](https://www.youtube.com/channel/UCnd6oUDFx11ibETnPkjTVPw/featured), así tal vez te animes a aprender un poquito más de esto.
+Como plus porque me caíste extremadamente bien (Seguir leyendo a alguien que está iniciando  no debe de ser nada fácil) te voy a dejar un mini tutorial de como usar los comandos anteriores instalando un paquete desde choco, vamos a instalar Node.js, ya que esto es un blog para principiantes en el mundo de la programación "Aunque... ahora que lo pienso no lo he especificado" bueno detalles más, detalles menos, y si no estas interesad@ en programar NTP sigue mi blog y próximamente mi canal de [YouTube](https://www.youtube.com/channel/UCnd6oUDFx11ibETnPkjTVPw/featured), así tal vez te animes a aprender un poquito más de esto.
 
 Iniciemos con esto. Para empezar déjame decirte que [Node.js](https://nodejs.org/en/) es un ambiente para [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript) en el cual puedes ejecutar código de este mismo en cualquier lugar que instales Node y no solo en el navegador como originalmente se pensó en los 90's, esto quiere decir que también podemos escribir y ejecutar código JavaScript en nuestra amada terminal.
 
@@ -145,9 +143,9 @@ Iniciemos con esto. Para empezar déjame decirte que [Node.js](https://nodejs.or
 choco find nodejs
 ```
 
-Como puedes ver es el la última versión, así que pasemos directamente a instalar
+Como puedes ver es la última versión, así que pasemos directamente a instalar
 
-Puedes ver el sitio oficial de Node.js [aquí](https://nodejs.org/en/) y la instalación comun y corriente [aquí](https://nodejs.org/en/download/)
+Puedes ver el sitio oficial de Node.js [aquí](https://nodejs.org/en/) y la instalación común y corriente [aquí](https://nodejs.org/en/download/)
 
 - Instalar Node.js
 
@@ -163,7 +161,7 @@ Para abrir el [REPL de Node](https://nodejs.org/en/knowledge/REPL/how-to-use-nod
 node
 ```
 
-Despues de abrir el REPL puedes escribir directamente esto
+Después de abrir el REPL puedes escribir directamente esto
 
 ```js
 console.log("Hello world")
@@ -179,4 +177,4 @@ Voy a dejar los comandos de listar paquetes instalados, ver más información de
 
 En el próximo capítulo de la serie, ***"Sé el amo de Windows desde la terminal"*** (Oficialmente se acaba de convertir en una serie, jeje) veremos como escribir código directamente en la terminal de Windows ;)
 
-Clic [aquí](https://www.ricardoveronica.com/se-el-amo-de-windows-desde-la-terminal) para la primer entrega de la serie.
+Clic [aquí](https://www.ricardoveronica.com/se-el-amo-de-windows-desde-la-terminal) para la primera entrega de la serie.
